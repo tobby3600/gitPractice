@@ -25,7 +25,7 @@ jobs:
         run: sudo apt-get install -y gcc
 
       - name: Compile tests 
-        run: gcc -I unity/src/ main/tdd/test.c unity/src/unity.c -o tdd/tests
+        run: gcc -I unity/src/ main/tdd/test.c unity/src/unity.c -o tests
 
       - name: Run tests
-        run: ./tdd/tests
+        run: ./tests
